@@ -96,15 +96,6 @@ async function run() {
       res.send(result);
     })
 
-    // security layer: verifyJWT
-    // email match
-    // check admin
-    // app.get('/users/:email',  async (req, res) => {
-    //   const email = req.params.email;
-
-    //   if (req.decoded.email !== email) {
-    //     res.send({ user: false })
-    //   }
 
     //   const query = { email: email }
     //   const user = await usersCollection.findOne(query);
