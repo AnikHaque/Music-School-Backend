@@ -110,8 +110,6 @@ async function run() {
       res.send(result);
     })
 
-    // security layer: verifyJWT
-    // email match
     // check instructor
     app.get('/users/instructor/:email', verifyJWT, async (req, res) => {
       const email = req.params.email;
